@@ -5,6 +5,9 @@ import './App.css'
 export default function App() {
   function onClick() {
     console.log("push");
+    var synth = window.speechSynthesis;
+    var utterThis = new SpeechSynthesisUtterance("firefox");
+    synth.speak(utterThis);
   }
 
   return (
